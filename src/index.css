@@ -7,7 +7,12 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: 'Avenir Next Cyr';
+  src: url('./assets/fonts/avenirnextcyr-regular.eot'); /* IE 9 Compatibility Mode */
+  src: url('./assets/fonts/avenirnextcyr-regular.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+  url('./assets/fonts/avenirnextcyr-regular.woff2') format('woff2'), /* Super Modern Browsers */
+  url('./assets/fonts/avenirnextcyr-regular.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+  url('./assets/fonts/avenirnextcyr-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+  url('./assets/fonts/avenirnextcyr-regular.svg#avenirnextcyr-regular') format('svg'); /* Chrome < 4, Legacy iOS */
 }

@@ -1,0 +1,38 @@
+.SearchInput {
+  border-radius: 370px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  border: 0;
+  width: 1500px;
+  height: 130px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  &__input {
+    margin-left: 75px;
+    margin-right: 75px;
+    width: auto;
+
+    outline: none;
+    border: 0;
+
+    font-family: "Avenir Next Cyr", monospace;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 43px;
+    line-height: 53px;
+
+    letter-spacing: 0.01em;
+  }
+
+  &__icon {
+    margin-left: 75px;
+    width: 49px;
+    height: 49px;
+  }
+}
+
+.SearchInput:focus {
+  border: 2px white !important;
+}
