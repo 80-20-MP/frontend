@@ -16,7 +16,8 @@ class SearchTags extends React.Component {
     this.state = {
       tagsFading: true,
       queryValue: "",
-      tags: []
+      tags: [],
+      fetching: false,
     }
   }
 
@@ -29,14 +30,18 @@ class SearchTags extends React.Component {
       return
     }
 
+    // TODO: refactor
     const {queryValue} = this.state
-    getTagsFromQuery(queryValue)
-      .then(r => {
-        this.setState({
-          tagsFading: true,
-          tags: r
+    this.setState({fetching: true}, () => {
+      getTagsFromQuery(queryValue)
+        .then(r => {
+          this.setState({
+            tagsFading: true,
+            tags: r,
+            fetching: false,
+          })
         })
-      })
+    })
   }
 
   render() {
@@ -48,6 +53,7 @@ class SearchTags extends React.Component {
           value={this.state.queryValue}
           onChange={this.handleQueryChange}
           onKeyPress={this.handleKeyPress}
+          active={this.state.fetching}
         />
         <Fading
           mode="fadeIn"

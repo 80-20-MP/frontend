@@ -5,7 +5,8 @@ import "./Fading.scss"
 export const fadingMode = {
   fadeIn: "Fading__FadeIn",
   fadeOut: "Fading__FadeOut",
-  fadeInOut: "Fading__FadeInOut"
+  fadeInOut: "Fading__FadeInOut",
+  blink: "Fading__Blink"
 }
 
 const Fading = (props) => {

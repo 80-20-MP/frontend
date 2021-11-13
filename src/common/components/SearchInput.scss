@@ -32,4 +32,16 @@
     width: 49px;
     height: 49px;
   }
+
+  &__active {
+    animation-name: BlinkingAnimation;
+    animation-iteration-count: infinite;
+    animation-duration: 1000ms;
+  }
+}
+
+@keyframes BlinkingAnimation {
+  0% {opacity: 1}
+  50% {opacity: .5}
+  100% {opacity: 1}
 }

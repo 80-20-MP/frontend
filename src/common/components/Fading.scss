@@ -16,6 +16,18 @@
     animation-iteration-count: 1;
     animation-duration: 1000ms !important;
   }
+
+  &__Blink {
+    animation-name: BlinkingAnimation;
+    animation-iteration-count: infinite;
+    animation-duration: 1000ms !important;
+  }
+}
+
+@keyframes BlinkingAnimation {
+  0% {opacity: 1}
+  50% {opacity: .5}
+  100% {opacity: 1}
 }
 
 @keyframes FadeInAnimation {
