@@ -1,0 +1,15 @@
+.SearchTags {
+  width: 1300px;
+  margin-top: 240px;
+
+  &__tags {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 30px;
+    margin-top: 50px;
+    justify-content: center;
+  }
+}
+

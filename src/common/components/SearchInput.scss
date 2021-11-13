@@ -2,7 +2,8 @@
   border-radius: 370px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   border: 0;
-  width: 1500px;
+  width: 100%;
+  min-width: 700px;
   height: 130px;
 
   display: flex;
@@ -12,7 +13,7 @@
   &__input {
     margin-left: 75px;
     margin-right: 75px;
-    width: auto;
+    width: 100%;
 
     outline: none;
     border: 0;
@@ -31,8 +32,4 @@
     width: 49px;
     height: 49px;
   }
-}
-
-.SearchInput:focus {
-  border: 2px white !important;
 }

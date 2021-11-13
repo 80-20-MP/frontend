@@ -1,0 +1,35 @@
+.Fading {
+  animation-duration: 500ms;
+
+  &__FadeIn {
+    animation-name: FadeInAnimation;
+    animation-iteration-count: 1;
+  }
+
+  &__FadeOut {
+    animation-name: FadeOutAnimation;
+    animation-iteration-count: 1;
+  }
+
+  &__FadeInOut {
+    animation-name: FadeInOutAnimation;
+    animation-iteration-count: 1;
+    animation-duration: 1000ms !important;
+  }
+}
+
+@keyframes FadeInAnimation {
+  from {opacity: 0}
+  to {opacity: 1}
+}
+
+@keyframes FadeOutAnimation {
+  from {opacity: 1}
+  to {opacity: 0}
+}
+
+@keyframes FadeInOutAnimation {
+  0% {opacity: 1}
+  50% {opacity: 0}
+  100% {opacity: 1}
+}
